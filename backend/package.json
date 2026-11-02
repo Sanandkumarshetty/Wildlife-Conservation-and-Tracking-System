@@ -1,0 +1,24 @@
+{
+  "name": "wildlife-conservation-backend",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch src/server.js",
+    "start": "node src/server.js",
+    "seed:test-users": "node scripts/seedTestUsers.js",
+    "db:migrate:suspicious-report-location": "node scripts/migrateSuspiciousReportLocation.js",
+    "species:common-names": "node scripts/backfillSpeciesCommonNames.js",
+    "species:habitats": "node scripts/backfillSpeciesHabitats.js",
+    "import:wildlife-dataset": "node scripts/importWildlifeDataset.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "jsonwebtoken": "^9.0.2",
+    "mongodb": "^6.20.0",
+    "mysql2": "^3.24.6"
+  }
+}
