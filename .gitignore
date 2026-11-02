@@ -1,0 +1,27 @@
+node_modules/
+dist/
+.next/
+out/
+.vercel/
+.turbo/
+coverage/
+
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+
+# Runtime uploads (keep placeholder files)
+backend/uploads/*
+!backend/uploads/reports/
+backend/uploads/reports/*
+!backend/uploads/reports/.gitkeep
+
+# Logs and local tooling files
+npm-debug.log*
+*.log
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.tsbuildinfo
